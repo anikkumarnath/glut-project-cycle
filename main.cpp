@@ -69,6 +69,14 @@ void circle(int r,int x1,int y1)
 }
 void myDisplay()
 {
+    glRasterPos2f(-100, 300); /// text position
+    char a[100] = "Cycle Drawing";
+    int len = strlen(a);
+    for (int i = 0; i < len; i++)
+    {
+        glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,a[i]);
+    }
+
     circle(75,249-400,400-479); /// 1st wheel
     circle(70,561-400,400-462); /// 2nd wheel
     circle(30,431-400,400-433); /// chain wheel
@@ -96,7 +104,7 @@ int main(int argc, char **argv)
     glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
     glutInitWindowSize(800, 800);
     glutInitWindowPosition(100, 100);
-    glutCreateWindow("Bresenham's Circle Drawing");
+    glutCreateWindow("Cycle Drawing");
     myInit();
     glutDisplayFunc(myDisplay);
 
