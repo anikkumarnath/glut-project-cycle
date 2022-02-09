@@ -1,8 +1,6 @@
 #include <gl/glut.h>
 #include <stdio.h>
 
-int x1, y1,r;
-
 void myInit()
 {
 
@@ -105,8 +103,8 @@ int main(int argc, char **argv)
     glutInitWindowSize(800, 800);
     glutInitWindowPosition(100, 100);
     glutCreateWindow("Cycle Drawing");
+    glutCreateWindow("Cycle Figure Drawing");
     myInit();
     glutDisplayFunc(myDisplay);
-
     glutMainLoop();
 }
