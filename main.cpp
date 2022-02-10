@@ -102,7 +102,6 @@ int main(int argc, char **argv)
     glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
     glutInitWindowSize(800, 800);
     glutInitWindowPosition(100, 100);
-    glutCreateWindow("Cycle Drawing");
     glutCreateWindow("Cycle Figure Drawing");
     myInit();
     glutDisplayFunc(myDisplay);
